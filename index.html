@@ -32,6 +32,7 @@
 <link href="css/style.min.css" rel="stylesheet">
 <!-- Color Scheme (In order to change the color scheme, replace the red.css with the color scheme that you prefer)-->
 <link href="css/jrf20.css" rel="stylesheet">
+<link href="css/parallax.min.css" rel="stylesheet">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -84,106 +85,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- offcanvas side end -->
   <!-- banner start -->
   <!-- ================ -->
-  <div class="banner">
-    <!-- slideshow start -->
-    <!-- ================ -->
-    <div class="slideshow white-bg">
-      <!-- slider revolution start -->
-      <!-- ================ -->
-      <div class="slider-banner-container">
-        <div class="slider-banner-fullscreen">
-          <ul>
-            <!-- slide 1 start -->
-            <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on" data-title="Slide 1">
-              <!-- main image -->
-              <img src="images/bg.gif"  alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-              <!-- Translucent background -->
-              <div class="tp-caption light-translucent-bg"
-									data-x="center"
-									data-y="bottom"
-									data-speed="800"
-									data-start="0"
-									style="background-color:rgba(255,255,255,0.1);"> </div>
-              <!-- LAYER NR. 1 -->
-              <div class="tp-caption sfl"
-									data-x="center"
-									data-y="0"
-                                    data-speed="600"
-									data-start="3000"><a href="http://chiouhoshun.blogspot.tw/" target="_blank"><img src="images/bg-1.png" alt="" class="object-non-visible animated  fadeInLeft" data-animation-effect="fadeInLeft" data-effect-delay="0"></a></div>
-              <!-- LAYER NR. 2 -->
-              <div class="tp-caption sfl"
-									data-x="50"
-									data-y="0"
-                                    data-speed="1500"
-									data-start="1500"><img src="images/bg-2.png" alt="" class="object-non-visible animated  fadeInUp" data-animation-effect="fadeInUp" data-effect-delay="0"></div>
-              <!-- LAYER NR. 3 -->
-              <div class="tp-caption sfl"
-									data-x="right"
-									data-y="250"
-                                    data-speed="1500"
-									data-start="40"><img src="images/bg-3.png" alt="" class="object-non-visible animated  swing" data-animation-effect="Swing" data-effect-delay="100"></div>
-              <!-- LAYER NR. 4 -->
-              <div class="tp-caption sfl"
-									data-x="800"
-									data-y="180"
-                                    data-speed="2500"
-									data-start="0"><img src="images/bg-4.png" alt="" class="object-non-visible animated Swing" data-animation-effect="Swing" data-effect-delay="0"></div>
-              <!-- LAYER NR. 5 -->
-              <div class="tp-caption sfl"
-									data-x="right"
-									data-y="-150"
-                                    data-speed="3500"
-									data-start="0"><img src="images/bg-5.png" alt="" class="object-non-visible animated Swing" data-animation-effect="Swing" data-effect-delay="0"></div>
-              <!-- LAYER NR. 6 -->
-              <div class="tp-caption sfl"
-									data-x="right"
-									data-y="350"
-                                    data-speed="2500"
-									data-start="0"><img src="images/bg-6.png" alt="" class="object-non-visible animated Swing" data-animation-effect="Swing" data-effect-delay="0"></div>
-              <!-- LAYER NR. 7 -->
-              <div class="tp-caption sfl"
-									data-x="right"
-									data-y="150"
-                                    data-speed="3000"
-									data-start="0"><img src="images/bg-7.png" alt="" class="object-non-visible animated Swing" data-animation-effect="Swing" data-effect-delay="0"></div>
-              <!-- LAYER NR. 8 -->
-              <div class="tp-caption sfl"
-									data-x="right"
-									data-y="100"
-                                    data-speed="1500"
-									data-start="0"><img src="images/bg-8.png" alt="" class="object-non-visible animated Swing" data-animation-effect="Swing" data-effect-delay="0"></div>
-              <!-- LAYER NR. 9 -->
-              <div class="tp-caption tp-resizeme sfl"
-									data-x="right"
-									data-y="50"
-									data-speed="500"
-									data-start="2500"><a href="http://hsu2015.jrf.org.tw/" target="_blank"><img src="images/bg-9.png" alt="" class="object-non-visible animated fadeInRight" data-animation-effect="fadeInRight" data-effect-delay="100"></a></div>
-              <!-- LAYER NR. 10 -->
-              <div class="tp-caption tp-resizeme sfl"
-									data-x="750"
-									data-y="150"
-									data-speed="1000"
-									data-start="0"><img src="images/bg-10.png" alt="" class="object-non-visible animated Swing" data-animation-effect="Swing" data-effect-delay="0"></div>
-              <!-- LAYER NR. 11 -->
-              <div class="tp-caption tp-resizeme sfl"
-									data-x="800"
-									data-y="140"
-									data-speed="1500"
-									data-start="0"><img src="images/bg-11.png" alt="" class="object-non-visible animated Swing" data-animation-effect="Swing" data-effect-delay="0"></div>
-              <!-- LAYER NR. 12 -->
-              <div class="tp-caption tp-resizeme sfl"
-									data-x="600"
-									data-y="100"
-									data-speed="2000"
-									data-start="0"><img src="images/bg-12.png" alt="" class="object-non-visible animated Swing" data-animation-effect="Swing" data-effect-delay="0"></div>
-            </li>
-            <!-- slide 1 end -->
-          </ul>
-        </div>
-      </div>
-      <!-- slider revolution end -->
+  <div class="banner scene" id="scene" data-scalar-y="1.33">
+    <div class="layer" data-depth="0.00"></div>
+    <div class="layer" data-depth="0.10">
+      <div class="background fixed"></div>
+      <a class="logo link" href="http://www.jrf.org.tw" title="財團法人民間司法改革基金會"></a>
     </div>
-    <!-- slideshow end -->
+    <div class="layer" data-depth="0.12">
+      <a class="zeppelin link" href="http://hsu2015.jrf.org.tw" title="徐自強無罪"></a>
+    </div>
+    <div class="layer" data-depth="0.15"><div class="roller-coaster"></div></div>
+    <div class="layer" data-depth="0.20"><div class="balloon"></div></div>
+    <div class="layer" data-depth="0.25"><div class="elephant"></div></div>
+    <div class="layer" data-depth="0.30">
+      <div class="ferris-wheel">
+        <div class="wheel"></div>
+        <div class="cabin">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="text"></div>
+      </div>
+    </div>
+    <div class="layer" data-depth="0.35"><div class="ground fixed"></div></div>
+    <div class="layer" data-depth="0.30"><div class="ice-cream-stand"></div></div>
+    <div class="layer" data-depth="0.40"><div class="stands"></div></div>
+    <div class="layer" data-depth="0.45"><div class="left-bench"></div></div>
+    <div class="layer" data-depth="0.45"><div class="tent"></div></div>
+    <div class="layer" data-depth="0.50">
+      <a class="hot-balloon link" href="https://www.facebook.com/jrf.tw" title="司改會 Facebook 粉絲專頁" rel="external nofollow"></a>
+    </div>
+    <div class="layer" data-depth="0.50"><div class="carousel"></div></div>
+    <div class="layer" data-depth="0.55"><div class="jrf-20"></div></div>
+    <div class="layer" data-depth="0.60"><div class="right-bench"></div></div>
+    <div class="layer" data-depth="0.70"><div class="popcorn"></div></div>
+    <div class="layer" data-depth="0.70">
+      <a class="plane link" href="http://chiouhoshun.blogspot.tw/" title="邱和順部落格" rel="external"></a>
+    </div>
   </div>
   <!-- banner end -->
   <!-- page-top start-->
@@ -341,7 +279,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <p><img src="images/t-2.png"></p>
             <p>4張入場券可組合成精緻圖樣，並贈送「愛不停轉摩天輪」與「司改萬用鎚」各1組</li>
           </ul>
-          
+
         </div>
         <div class="col-sm-4">
           <div class="box-style-1 white-bg object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
@@ -439,7 +377,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- ================ -->
   <div class="subfooter">
     <div class="container">
-      <div class="row">     
+      <div class="row">
       <div class="col-md-6">
       <p><img src="images/jrf_logo_footer.png" ></p>
         <p>民間司法改革基金會成立於1995年11月。主要工作為法案推動、監督評鑑、個案追蹤與教育推廣。改革的力量必須由下而上，只有經由民間的推力，才能讓改革的夢想成為真實，最終建立人民信賴的司法。</p>
@@ -473,12 +411,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Appear javascript -->
 <script type="text/javascript" src="plugins/jquery.appear.js"></script>
 <!-- Parallax javascript -->
-<script src="plugins/jquery.parallax-1.1.3.js"></script>
+<script src="plugins/jquery.parallax.min.js"></script>
 <!-- Jasny Bootstrap -->
 <script type="text/javascript" src="plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
 <!-- Initialization of Plugins -->
 <script type="text/javascript" src="js/template.js"></script>
 <!-- Magnific Popup javascript -->
 <script type="text/javascript" src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<!-- Others -->
+<script>
+    $('#scene').parallax();
+</script>
 </body>
 </html>
